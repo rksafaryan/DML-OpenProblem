@@ -26,7 +26,7 @@ def performance_metrics(actual: list[int],predicted: list[int]) -> tuple:
 
 def test_confusion_matrix() -> None:
     # Test case 1
-    y_actual, y_pred = [1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1], [0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0]
+    y_actual, y_pred = [1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1], [0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0]
     assert performance_metrics(y_actual,y_pred) == ([[6, 4], [2, 7]],0.684,  0.667, 0.778, 0.636), "Test case 1 failed"
 
     # Test case 2
